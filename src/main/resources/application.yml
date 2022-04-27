@@ -1,1 +1,24 @@
+spring:
 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: create
+
+  h2:
+    console:
+      path: /h2-console
+
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      jdbc-url: jdbc:h2:mem:kojaengi
+      username: sa
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
