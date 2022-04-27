@@ -1,4 +1,7 @@
 package app.example.kojaengi.repository
 
-interface LoggingRepository {
+import app.example.kojaengi.entity.LoggingEntity
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface LoggingRepository : JpaRepository<LoggingEntity, Long>{
 }
