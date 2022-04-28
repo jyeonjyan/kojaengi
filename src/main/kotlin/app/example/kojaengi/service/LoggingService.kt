@@ -10,7 +10,7 @@ import java.sql.DriverManager.println
 class LoggingService(private val loggingRepository: LoggingRepository) {
 
     fun addLogging(logDto: LogDto){
-        val loggingEntity = LoggingEntity(logDto.memberName, logDto.occurrenceTime)
+        val loggingEntity = LoggingEntity(logDto)
         val save = loggingRepository.save(loggingEntity)
 
         println(save.toString())
