@@ -5,5 +5,7 @@ enum class ColorType (val code: String, val colorName: String){
     BROKEN_GREEN("102345", "brokenGreen")
     ;
 
-    fun sayYourColor() = "color: $colorName ⚡️ ${if (code[0] == '#') "status good" else "plz check status"}"
+    fun sayYourColor() = "color: $colorName ⚡️ ${
+        if (code[0] == '#') "status good" 
+        else "plz check status"}"
 }
