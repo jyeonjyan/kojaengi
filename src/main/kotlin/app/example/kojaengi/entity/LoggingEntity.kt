@@ -5,7 +5,7 @@ import java.time.LocalDateTime
 import javax.persistence.*
 
 @Entity
-open class LoggingEntity() {
+class LoggingEntity() {
 
     constructor(logDto: LogDto) : this(){
         this.id = null
@@ -17,13 +17,14 @@ open class LoggingEntity() {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "logging_id")
     var id: Long? = null
+        protected set
 
     @Column(name = "member_name", nullable = false)
     var memberName: String? = null
-    protected set
+        protected set
 
     @Column(name = "occurrence_time", nullable = false)
     var occurrenceTime: LocalDateTime? = null
-    protected set
+        protected set
 
 }
