@@ -22,4 +22,11 @@ class Test {
 
         return stringBuilder.trim()
     }
+
+    @Test
+    @DisplayName("infix call:: 중위 호출")
+    fun infixCallTest(){
+        // to는 확장함수다 to를 사용하면 타입과 상관없이 임의의 순서쌍을 만들 수 있다.
+        println(mapOf("key" to "value", "k" to "v"))
+    }
 }
