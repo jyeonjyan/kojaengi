@@ -7,11 +7,11 @@ class ifExTest {
 
     @Test
     @DisplayName("Kotlin에서 if는 문(statement)가 아닌 식(expression)이다.")
-    fun manyIfEx(){
-        println(iGiveYouSentence())
+    fun ifExTest(){
+        println(statusMessage())
     }
 
-    private fun iGiveYouSentence(): String{
+    private fun statusMessage(): String{
         val isStatusGood = true
         return if (isStatusGood) "yes keep going" else "broken"
     }
