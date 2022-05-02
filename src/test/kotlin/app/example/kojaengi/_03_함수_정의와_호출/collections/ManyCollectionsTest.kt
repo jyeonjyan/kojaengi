@@ -8,7 +8,7 @@ class ManyCollectionsTest {
 
     @Test
     @DisplayName("코틀린은 자신만의 컬렉션 기능을 제공하지 않는다. 완전히 자바와 일치하다.")
-    fun hashSetThrowsException(){
+    fun hashSetDS(){
         val hashSet = hashSetOf(1, 3, 5, 7)
         hashSet.add(3)
 
@@ -20,7 +20,7 @@ class ManyCollectionsTest {
 
     @Test
     @DisplayName("코틀린 컬렉션을 print 한다면 디폴트 toString()이 기본적으로 붙는다.")
-    fun soutCollection(){
+    fun printArrWithToString(){
         val arrayList = arrayListOf(1, 2, 3, 4)
 
         // [1, 2, 3, 4]

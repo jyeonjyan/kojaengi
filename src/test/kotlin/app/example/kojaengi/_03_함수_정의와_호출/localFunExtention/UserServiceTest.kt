@@ -13,7 +13,12 @@ class UserServiceTest {
     fun userSave() {
         val user = User("jyeonjyan")
 
+        /**
+         * @see User.validate 확장 함수
+         */
         assertThrows<IllegalArgumentException> { user.validate() }
+
+
         // save user
     }
 

@@ -14,10 +14,11 @@ class DefaultFinalTest {
 
     // 메소드 파라미터는 기본적으로 final
     private fun executor(msg: String){
-//        msg = "it's changed!"
+//        msg = "it's changed!"  -> is not work because:: local msg is final
         println(msg)
     }
 }
 
+// Kotlin 은 기본적으로 final 클래스 open 키워드로 외부에서의 접근을 열어줘야 함
 open class OpenClass
 class ClosedClass
