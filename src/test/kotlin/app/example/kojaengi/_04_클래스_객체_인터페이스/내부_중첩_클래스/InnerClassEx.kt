@@ -1,4 +1,4 @@
-package app.example.kojaengi._04_클래스_객체_인터페이스.innerNestedClass
+package app.example.kojaengi._04_클래스_객체_인터페이스.내부_중첩_클래스
 
 import java.time.LocalDateTime
 
