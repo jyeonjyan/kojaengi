@@ -11,10 +11,10 @@ class Test {
     fun accessTest(){
 
         /**
-         * @see InnerClassEx.MyInnerClass 는 inner-class로 외부 클래스 객체 생성 없이 직접 객체를 생성할 수 없습니다.
-         * @see InnerClassEx.MyNestedClass 는 nested-class로 바로 객체를 생성할 수 있습니다.
+         * @see ClassWrapper.MyInnerClass 는 inner-class로 외부 클래스 객체 생성 없이 직접 객체를 생성할 수 없습니다.
+         * @see ClassWrapper.MyNestedClass 는 nested-class로 바로 객체를 생성할 수 있습니다.
          */
-        InnerClassEx().MyInnerClass(LocalDateTime.now()).executor()
-        InnerClassEx.MyNestedClass(LocalDateTime.now()).executor()
+        ClassWrapper().MyInnerClass(LocalDateTime.now()).executor()
+        ClassWrapper.MyNestedClass(LocalDateTime.now()).executor()
     }
 }
