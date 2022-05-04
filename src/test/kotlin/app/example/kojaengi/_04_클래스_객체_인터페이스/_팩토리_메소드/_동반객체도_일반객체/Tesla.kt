@@ -2,7 +2,7 @@ package app.example.kojaengi._04_클래스_객체_인터페이스._팩토리_메
 
 open class Tesla private constructor() {
 
-    companion object TeslaFactory : CarCareService{
+    companion object TeslaFactory {
 
         fun orderTeslaModel3(name: String) : TeslaModel3{
             return TeslaModel3(name)
@@ -10,10 +10,6 @@ open class Tesla private constructor() {
 
         fun orderTeslaModelX(name: String) : TeslaModelX{
             return TeslaModelX(name)
-        }
-
-        override fun getWarrantyPeriod() {
-            println("tesla basically provide 3 years warranty")
         }
     }
 }
@@ -35,4 +31,8 @@ class TeslaModelX(private val name: String){
 interface CarCareService {
 
     fun getWarrantyPeriod()
+}
+
+fun Tesla.TeslaFactory.getWarrantyPeriod(){
+    println("tesla basically provide 3 years warranty")
 }
