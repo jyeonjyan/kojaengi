@@ -44,10 +44,22 @@ class Test {
         val count = userList.count { f -> f.age == 15 }
     }
 
+    @Test
+    @DisplayName("5.2.3 groupBy: 리스트를 여러 그룹으로 이뤄진 맵으로 변경")
+    fun groupByTest(){
+        val userList = initUser()
+        // 안전한 호출 연산자 ? it.name == null 이면 .get() 하지 않음
+        val groupBy = userList.groupBy { it.name?.get(0) }
+
+        println(groupBy)
+    }
+
 
     private fun initUser(): List<User> {
         val user1 = User("name1", 14)
         val user2 = User("name2", 15)
-        return listOf(user1, user2)
+        val user3 = User("anonymous", 16)
+
+        return listOf(user1, user2, user3)
     }
 }
