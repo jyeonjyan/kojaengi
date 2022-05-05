@@ -1,4 +1,4 @@
-package app.example.kojaengi._05_람다로_프로그래밍._멤버_참조.nullSafety;
+package app.example.kojaengi._05_람다로_프로그래밍._로컬_변수_접근._멤버_참조.nullSafety;
 
 import org.junit.jupiter.api.DisplayName;
 
