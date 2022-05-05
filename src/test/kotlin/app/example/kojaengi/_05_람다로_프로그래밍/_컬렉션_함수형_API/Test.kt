@@ -54,6 +54,14 @@ class Test {
         println(groupBy)
     }
 
+    @Test
+    @DisplayName("5.2.4. flatMap과 flatten: 중첩된 컬렉션 안의 원소 처리")
+    fun flatMapFlattenTest(){
+        val stringList = listOf("abcd", "efgh", "abcd")
+        // it 을 toList화 한것을 하나의 리스트로 모은다는.
+        println(stringList.flatMap { it.toList() }.toSet())
+    }
+
 
     private fun initUser(): List<User> {
         val user1 = User("name1", 14)
