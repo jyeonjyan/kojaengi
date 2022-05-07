@@ -37,9 +37,10 @@ class Test {
     @Test
     @DisplayName("SAM 장점은 이렇게 정리할 수 있겠다.")
     fun teslaModel3SystemTest(){
-        isTeslaWarrantyOK().checkTripLog(12314)
+        isTeslaWarrantyOKCheck.checkTripLog(12314)
     }
 
+    private val isTeslaWarrantyOKCheck = isTeslaWarrantyOK()
     private fun isTeslaWarrantyOK(): TeslaTrip {
         // object 를 사용해서 단일 인스턴스를 보장한다.
         return object : TeslaTrip {

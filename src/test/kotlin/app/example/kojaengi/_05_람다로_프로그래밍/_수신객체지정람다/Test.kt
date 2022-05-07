@@ -11,7 +11,7 @@ class Test {
     fun originIsEqualsTo(){
         /**
          * 리팩토링이 되었다고 느끼나 ?
-         * Kotlin 이해도에 따라 유지보수 하기 어려운 코드가 될 수도 있다.
+         * Kotlin DSL 이해도에 따라 유지보수 하기 어려운 코드가 될 수도 있다.
          */
         assertThat(getStringCombinationTypeA())
             .isEqualTo(getStringCombinationTypeB())
