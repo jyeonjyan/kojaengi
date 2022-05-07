@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
-class withAndApply {
+class Test {
 
     @Test
     @DisplayName("자바에서는 이런 느낌으로 코딩 할 것이다.")
@@ -27,6 +27,9 @@ class withAndApply {
         return sb.toString()
     }
 
+    /**
+     * with()
+     */
     private fun getStringCombinationTypeB(): String {
         val sb = StringBuilder()
 
@@ -41,6 +44,9 @@ class withAndApply {
         }
     }
 
+    /**
+     * when()
+     */
     private fun getStringCombinationTypeC() = with(StringBuilder()){
         this.append("hello ")
         for (i in 1..10){
