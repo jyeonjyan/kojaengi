@@ -50,7 +50,7 @@ class Test {
     }
 
     /**
-     * when()
+     * with()
      */
     private fun getStringCombinationTypeC() = with(StringBuilder()){
         this.append("hello ")

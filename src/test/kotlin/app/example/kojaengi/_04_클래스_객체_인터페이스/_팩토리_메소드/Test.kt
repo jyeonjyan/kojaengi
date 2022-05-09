@@ -9,7 +9,7 @@ class Test {
     @DisplayName("동반객체:: 팩토리 메소드를 이용한 객체 생성")
     fun makeOwnTesla(){
 
-        val myTesla = Tesla.makeTesla("model3")
+        val myTesla = Tesla.makeTesla(null)
         println(myTesla.toString())
     }
 }
