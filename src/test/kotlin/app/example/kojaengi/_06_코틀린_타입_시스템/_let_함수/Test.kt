@@ -7,6 +7,6 @@ class Test {
     @org.junit.jupiter.api.Test
     @DisplayName("let 함수의 it 은 not-null임을 보장한다.")
     fun letFunInsideItCanNotBeNull(){
-        
+
     }
 }
